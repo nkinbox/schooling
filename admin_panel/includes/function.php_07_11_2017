@@ -1,0 +1,954 @@
+<?php
+require_once('config.php');
+class GFHAdmin extends GFHConfig
+{
+	public static $msg="";
+	public static $error="";
+
+	public function __construct()
+	{
+		parent::__construct();
+	}
+
+	public function login()
+	{
+		if(isset($_POST['login']))
+		{
+		  if(!empty($_POST['emailid']) && !empty($_POST['emailid']))
+		  {
+		  	 
+		    $emailid=mysqli_real_escape_string(GFHConfig::$link,trim($_POST['emailid']));
+		    $password=mysqli_real_escape_string(GFHConfig::$link,trim($_POST['password']));
+		    //$pass=md5($password);
+		    $sql1="select * from admin where email='".$emailid."' and password='".$password."'";
+		    $query=mysqli_query(GFHConfig::$link,$sql1);
+		    $arr=mysqli_fetch_array($query);
+		    if($emailid==$arr['email'] && $password==$arr['password'])
+		    {
+		    	//echo "<pre>"; print_r($_POST);die;
+		      session_start();
+		      $_SESSION['ADMINID']=$arr['id'];
+		      $_SESSION['EMAIL']=$arr['email'];
+		      $_SESSION['STATUS']=$arr['status'];
+		      
+		      // $_SESSION['FIRSTNAME']=$arr['first_name'];
+		      // $_SESSION['LASTNAME']=$arr['last_name'];
+		      header("location:home.php?con=dashboard");
+		     
+		    }else{
+		    	echo "<script>alert('Username & Password is invalid');</script>";
+		    }
+		    
+		  }else{
+		  	echo "<script>alert('Username & Password is invalid');</script>";
+		  }
+
+
+		}
+	}
+
+	public function logout()
+	{
+		session_start();
+		unset($_SESSION['ID']);
+		header("location:index.php");
+	}
+
+	public function getAdmin()
+	{
+		$sql="select * from admin ";	
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function update_admin()
+	{
+		if(isset($_POST)&&(count($_POST)>0))
+		{
+
+			$admin_id=isset($_POST['admin_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['admin_id']):'';
+			$username=isset($_POST['username'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['username']):'';
+			$email=isset($_POST['email'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['email']):'';
+			
+			$password=isset($_POST['password'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['password']):'';
+			
+
+			$sql="UPDATE admin SET username = '".$username."',email='".$email."',password='".$password."',status=1";
+			$sql.="  where id=".$admin_id;
+			$result = mysqli_query(GFHConfig::$link,$sql);
+			if($result)
+			{
+				header('location:admin.php?msg=update sucessfully');
+			}
+				
+		}
+	}
+
+	public function getPages($id = "")
+    {
+        $page_id = isset($id) ? $id : '';
+        $sql = "select * from pages";
+        if (!empty($page_id)) {
+            $sql .= " where page_id=" . $page_id;
+        }
+        return mysqli_query(GFHConfig::$link, $sql);
+    }
+
+    public function getPages_by_parentid($id = "")
+    {
+        $page_id = isset($id) ? $id : '';
+        $sql = "select * from pages";
+        if (!empty($page_id)) {
+            $sql .= " where page_parent_id=" . $page_id;
+        }
+        return mysqli_query(GFHConfig::$link, $sql);
+    }
+
+
+    public function setPage()
+    {
+        if (isset($_POST) && (count($_POST) > 0)) {
+            //echo "<pre>";print_r($_POST);die;	
+
+            $page_id = isset($_POST['page_id']) ? mysqli_real_escape_string(GFHConfig::$link, $_POST['page_id']) : '';
+            $page_parent_id = isset($_POST['page_parent_id']) ? mysqli_real_escape_string(GFHConfig::$link, $_POST['page_parent_id']) : '';
+            $page_name = ucfirst(mysqli_real_escape_string(GFHConfig::$link, $_POST['page_name']));
+            $page_description = isset($_POST['page_description']) ? $_POST['page_description'] : '';
+            $page_order = isset($_POST['page_description'])?mysqli_real_escape_string(GFHConfig::$link, $_POST['page_order']):'';
+            $page_status = isset($_POST['page_status'])?mysqli_real_escape_string(GFHConfig::$link, $_POST['page_status']):'';
+            $page_footer = isset($_POST['page_footer'])?mysqli_real_escape_string(GFHConfig::$link, $_POST['page_footer']):'';
+            $page_link = isset($_POST['page_link'])?mysqli_real_escape_string(GFHConfig::$link, $_POST['page_link']):'';
+            $page_image = $_FILES['page_image']['name'];
+            $allowedExts = array("jpg", "jpeg", "gif", "png");
+            $extension = strtolower(pathinfo($_FILES['page_image']['name'], PATHINFO_EXTENSION));
+            if (!empty($page_id)) {
+
+                //echo "<pre>";print_r($_POST);die;
+                //echo "update pages set page_name='".$page_name."', page_description='".$page_description."', page_order='".$page_order."', page_parent_id='".$page_parent_id."', page_footer='".$page_footer."',page_link='".$page_link."',page_status=".$page_status." where page_id=".$page_id;die;
+                mysqli_query(GFHConfig::$link, "update pages set page_name='" . $page_name . "', page_description='" .$page_description. "', page_order='" . $page_order . "', page_parent_id='" . $page_parent_id . "', page_footer='" . $page_footer . "',page_link='" . $page_link . "',page_status=" . $page_status . " where page_id=" . $page_id);
+                if ($_FILES['page_image']['name'] != "") {
+
+                    if (in_array($extension, $allowedExts)) {
+
+                        $img = "page-" . $page_id . "." . $extension;
+
+                        mysqli_query(GFHConfig::$link, "update pages set page_image='" . $img . "' where page_id=" . $page_id);
+                        move_uploaded_file($_FILES['page_image']['tmp_name'], "../images/page/" . $img);
+                    }
+                }
+                header('location:page.php?msg=Page Updated Successfully');
+
+            } else {
+                //echo "<pre>"; print_r($_POST);die;
+                $check = mysqli_query(GFHConfig::$link, "select * from pages where page_name='" . $page_name . "' and page_status='0'");
+                if (mysqli_num_rows($check) < 1) {
+
+                    mysqli_query(GFHConfig::$link, "insert into pages set page_name='" . $page_name . "', page_description='" . $page_description . "', page_order='" . $page_order . "', page_parent_id='" . $page_parent_id . "', page_footer='" . $page_footer . "',page_link='" . $page_link . "',page_status=" . $page_status);
+                    $id = mysqli_insert_id(GFHConfig::$link);
+                    if ($_FILES['page_image']['name'] != '') {
+                        if (in_array($extension, $allowedExts)) {
+                            $img = "page-" . $id . "." . $extension;
+                            mysqli_query(GFHConfig::$link, "update pages set page_image='" . $img . "' where page_id='" . $id . "'");
+                            move_uploaded_file($_FILES['page_image']['tmp_name'], "../images/page/" . $img);
+                            header('location:page.php?msg=Page added Successfully');
+                        } else {
+                            header('location:page.php?error=Please Upload jpeg,jpg,png image.');
+                        }
+                    }
+                    header('location:page.php?msg=Page added Successfully');
+
+
+                    //header("location: add-banner.php?msg=Invalid File. Please select only jpg, jpeg, gif, png files.");
+                } else {
+                    header('location:add-page.php?msg=Page not  added');
+                }
+            }
+        }
+    }
+
+    public function delete_pages($ids = "")
+    {
+        //echo "<pre>";print_r($ids);die;
+        if (!empty($ids)) {
+            foreach ($ids as $id) {
+                $sql = mysqli_query(GFHConfig::$link, "select * from pages where page_id=" . $id);
+                $row = mysqli_fetch_assoc($sql);
+                if (!empty($row['page_image'])) {
+                    $filename = "../images/page/" . $row['page_image'];
+
+                    if (file_exists($filename)) {
+                        unlink($filename);
+                    }
+                }
+                mysqli_query(GFHConfig::$link, "delete from pages where page_id=" . $id);
+            }
+
+        }
+
+    }
+
+    public function siteinfo(){
+
+       // echo "<pre>";print_r($_POST);die;
+        $siteinfo_id=isset($_POST['siteinfo_id'])?$_POST['siteinfo_id']:'';
+        $email=isset($_POST['email'])?$_POST['email']:'';
+        $phone=isset($_POST['phone'])?$_POST['phone']:'';
+        $address=isset($_POST['address'])?$_POST['address']:'';
+        $facebook=isset($_POST['facebook'])?$_POST['facebook']:'';
+        $twitter=isset($_POST['twitter'])?$_POST['twitter']:'';
+        $googlepluse=isset($_POST['googlepluse'])?$_POST['googlepluse']:'';
+        $linkedin=isset($_POST['linkedin'])?$_POST['linkedin']:'';
+        if(!empty($siteinfo_id))
+        {
+           //echo "update site_info set email='".$email."',phone='".$phone."',address='".$address."',sell='".$sell."',facebook='".$facebook."',twitter='".$twitter."',youtube='".$youtube."' where id='".$siteinfo_id."'";die;
+            $update=mysqli_query(GFHConfig::$link,"update site_info set email='".$email."',phone='".$phone."',address='".$address."',linkedin='".$linkedin."',facebook='".$facebook."',twitter='".$twitter."',googlepluse='".$googlepluse."' where id='".$siteinfo_id."'");
+
+            if($update)
+            {
+              header('location:siteinfo.php?msg=update successfully');  
+            }
+        }
+    }
+
+	public function getUsers($id="")
+	{
+		$user_id=isset($id)?$id:'';
+		$sql="select * from admin";
+		if(!empty($user_id))
+		{
+			$sql.=" where id=".$user_id;
+		}
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function getNewrides($id="")
+	{
+		$user_id=isset($id)?$id:'';
+		$sql="select * from car_details";
+		if(!empty($user_id))
+		{
+			$sql.=" where vehicle_id=".$user_id;
+		}
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function setNewRides()
+	{
+
+		//echo "<pre>";print_r($_POST);die;
+		$response=array();
+		if(!empty($_POST['vehical_type']) && !empty($_POST['start_from']) && !empty($_POST['end']))
+		{
+			$newrides_id=isset($_POST['newrides_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['newrides_id']):'';
+			
+			$vehical_type=isset($_POST['vehical_type'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['vehical_type']):'';
+			$start_from=isset($_POST['start_from'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['start_from']):'';
+			$end_to=isset($_POST['end'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['end']):'';
+
+			$reserve_price=isset($_POST['reserve_price'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['reserve_price']):'';
+			$extra_charge=isset($_POST['extra_charge'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['extra_charge']):'';
+			$max_kms=isset($_POST['max_kms'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['max_kms']):'';
+			$driver_allowance=isset($_POST['driver_allowance'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['driver_allowance']):'';
+			$toll_tax=isset($_POST['toll_tax'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['toll_tax']):'';
+			$gst=isset($_POST['gst'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['gst']):'';
+			
+			//echo "<pre>";print_r($carname);die;
+
+			if(isset($newrides_id)&&!empty($newrides_id))
+			{
+
+				$sql1="update car_details SET vehicle_type='".$vehical_type."',start_from='".$start_from."', end ='".$end_to."',reserve_price='".$reserve_price."',extra_charge='".$extra_charge."',driver_allowance='".$driver_allowance."',toll_tax='".$toll_tax."',gst='".$gst."',max_kms='".$max_kms."',entry_date=now() where vehicle_id='".$newrides_id."'";
+
+				//echo $sql1;die;
+				$update_newrides = mysqli_query(GFHConfig::$link,$sql1);
+				if($update_newrides)
+				{
+					$response=array('status'=>'update','msg'=>'update successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+
+			}else{
+				//echo "<pre>";print_r($_POST);die;
+				$sql1="insert into car_details SET vehicle_type='".$vehical_type."',start_from='".$start_from."', end ='".$end_to."',reserve_price='".$reserve_price."',extra_charge='".$extra_charge."',driver_allowance='".$driver_allowance."',toll_tax='".$toll_tax."',gst='".$gst."',max_kms='".$max_kms."',entry_date=now()";
+				//echo $sql1;die;
+				$insert_newrides = mysqli_query(GFHConfig::$link,$sql1);
+				if($insert_newrides)
+				{
+					$response=array('status'=>'inserted','msg'=>'inserted successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+			}
+		}else{
+			$response=array('status'=>'empty','error'=>'Please enter required field.');
+		}
+
+		return $response;
+	}
+
+	public function getRentCar($id="")
+	{
+		$id=isset($id)?$id:'';
+		$sql="SELECT * FROM `tbl_rent_car`";
+		if(!empty($user_id))
+		{
+			$sql.=" where id='".$id."'";
+		}
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function setRentCar()
+	{
+
+		//echo "<pre>";print_r($_POST);die;
+		$response=array();
+		if(!empty($_POST['vehical_type']) && !empty($_POST['start_from']))
+		{
+			$car_id=isset($_POST['car_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['car_id']):'';
+			
+			$vehical_type=isset($_POST['vehical_type'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['vehical_type']):'';
+			$start_from=isset($_POST['start_from'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['start_from']):'';
+			$package=isset($_POST['package'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['package']):'';
+
+			$reserve_price=isset($_POST['reserve_price'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['reserve_price']):'';
+			$extra_km_rate=isset($_POST['extra_km_rate'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['extra_km_rate']):'';
+			$extra_hr_rate=isset($_POST['extra_hr_rate'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['extra_hr_rate']):'';
+			
+			$gst=isset($_POST['gst'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['gst']):'';
+			
+			//echo "<pre>";print_r($carname);die;
+
+			if(isset($car_id)&&!empty($car_id))
+			{
+
+				$sql1="update tbl_rent_car SET vehicle_type='".$vehical_type."',start_from='".$start_from."', package ='".$package."',reserve_price='".$reserve_price."',extra_km_rate='".$extra_km_rate."',extra_hr_rate='".$extra_hr_rate."',gst='".$gst."',updated_at=now() where id='".$car_id."'";
+
+				//echo $sql1;die;
+				$update_newrides = mysqli_query(GFHConfig::$link,$sql1);
+				if($update_newrides)
+				{
+					$response=array('status'=>'update','msg'=>'update successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+
+			}else{
+				//echo "<pre>";print_r($_POST);die;
+				$sql1="insert into tbl_rent_car SET vehicle_type='".$vehical_type."',start_from='".$start_from."', package ='".$package."',reserve_price='".$reserve_price."',extra_km_rate='".$extra_km_rate."',extra_hr_rate='".$extra_hr_rate."',gst='".$gst."',created_at=now()";
+				//echo $sql1;die;
+				$insert_newrides = mysqli_query(GFHConfig::$link,$sql1);
+				if($insert_newrides)
+				{
+					$response=array('status'=>'inserted','msg'=>'inserted successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+			}
+		}else{
+			$response=array('status'=>'empty','error'=>'Please enter required field.');
+		}
+
+		return $response;
+	}
+
+	public function ajax_rent_car_package($cityid)
+	{
+		//echo $cityid;
+		$results=mysqli_query(GFHConfig::$link,"SELECT * FROM `city` WHERE name='".$cityid."'");
+		return mysqli_fetch_assoc($results);
+	}
+
+	/*public function single_delete($id)
+	{
+		$response="";
+	     if(isset($id)&&!empty($id))
+	     {
+	     	mysqli_query(GFHConfig::$link,"delete from new_rides where id=".$id);
+	     	
+	     	$response=true;
+	     }
+	     return $response;
+	}*/
+
+	public function single_delete($id="")
+	{
+		$response="";
+	     if(isset($id)&&!empty($id))
+	     {
+	     	mysqli_query(GFHConfig::$link,"delete from car_details where vehicle_id=".$id);
+	     	
+	     	$response=true;
+	     }
+	     return $response;
+	}
+
+	public function delete_cartype($ids="")
+	{
+
+	     $response=array();
+		
+	     if(isset($ids)&&!empty($ids))
+	     {
+	     	foreach($ids as $id){
+	     		// echo "<pre>";print_r($id);die;
+	     		//echo "delete from tbl_car_type where id='".$id."'";die;
+	     		$res=mysqli_query(GFHConfig::$link,"delete from tbl_car_type where id='".$id."'");
+	     		if($res)
+	     		{
+	     			$response=true;
+	     		}
+	     	}
+	     }
+	    return $response;
+	}
+
+	public function deleteNewRides($ids)
+	{
+		$response=array();
+
+	     if(isset($ids)&&!empty($ids))
+	     {
+	     	foreach($ids as $id){
+	     		$res=mysqli_query(GFHConfig::$link,"delete from car_details where vehicle_id=".$id);
+	     		if($res)
+	     		{
+	     			$response=true;
+	     		}
+	     	}
+	     }
+	    return $response;
+	}
+
+	public function deleteRentCar($ids)
+	{
+		$response=array();
+
+	     if(isset($ids)&&!empty($ids))
+	     {
+	     	foreach($ids as $id){
+	     		$res=mysqli_query(GFHConfig::$link,"delete from tbl_rent_car where id=".$id);
+	     		if($res)
+	     		{
+	     			$response=true;
+	     		}
+	     	}
+	     }
+	    return $response;
+	}
+
+
+	public function getRegisterUsers($id="")
+	{
+		$user_id=isset($id)?$id:'';
+		$sql="select * from users";
+		if(!empty($user_id))
+		{
+			$sql.=" where id=".$user_id;
+		}
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function registerUsers()
+	{
+		$response=array();
+		 //echo "<pre>";print_r($_POST);die;
+		if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['address']) && !empty($_POST['password']))
+		{
+			$userid=isset($_POST['user_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['user_id']):'';
+			
+			$name=isset($_POST['name'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['name']):'';
+			$email=isset($_POST['email'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['email']):'';
+			$phone=isset($_POST['phone'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['phone']):'';
+			$address=isset($_POST['address'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['address']):'';
+			$password=isset($_POST['password'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['password']):'';
+
+
+			if(isset($userid)&&!empty($userid))
+			{
+				$sql1="update users SET name='".$name."',email='".$email."', phone ='".$phone."',address='".$address."',password='".$password."',status='1',entry_date=now() where id='".$userid."'";
+				//echo $sql1;die;
+				$update_users = mysqli_query(GFHConfig::$link,$sql1);
+				if($update_users)
+				{
+					$response=array('status'=>'update','msg'=>'update successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+
+			}else{
+				$sql1="insert into users SET name='".$name."',email='".$email."', phone ='".$phone."',address='".$address."',password='".$password."',status='1',entry_date=now()";
+				$insert_users = mysqli_query(GFHConfig::$link,$sql1);
+				if($insert_users)
+				{
+					$response=array('status'=>'inserted','msg'=>'inserted successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+			}
+		}else{
+			$response=array('status'=>'empty','error'=>'Please enter required field.');
+		}
+
+		return $response;
+	}
+
+	public function delete_users($ids="")
+	{
+		$response=array();
+
+	     if(isset($ids)&&!empty($ids))
+	     {
+	     	foreach($ids as $id){
+	     		$res=mysqli_query(GFHConfig::$link,"delete from users where id=".$id);
+	     		if($res)
+	     		{
+	     			$response=true;
+	     		}
+	     	}
+	     }
+	    return $response;
+	}
+
+	public function getBookingDetails($id="")
+	{
+		$booking_id=isset($id)?$id:'';
+		$sql="SELECT `id`, `name`, `email`,`pickupdate`, `phone`, `pickupcity`, `dropcity`, `pickupaddress`, `dropaddress`, `entry_date`, `totalamount`, `carid`, `pickuptime`  FROM `tbl_bookinginfo` ";
+		if(!empty($booking_id))
+		{
+			$sql.=" where B.id=".$booking_id;
+		}
+		$sql.=" order by id desc";
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function getRentalBooking($id="")
+	{
+		$booking_id=isset($id)?$id:'';
+		$sql="SELECT `id`, `name`, `email`, `phone`, `package`, `pickupdate`, `pickuptime`, `pickupcity`, `pickupaddress`, `totalamount`, `carid`, `status`, `entry_date` FROM `tbl_booking_rental_car` ";
+		if(!empty($booking_id))
+		{
+			$sql.=" where B.id=".$booking_id;
+		}
+		$sql.=" order by id desc";
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function booking_detail()
+	{
+		$response=array();
+		 //echo "<pre>";print_r($_POST);die;
+		if(count($_POST)>0)
+		{
+			$booking_id=isset($_POST['booking_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['booking_id']):'';
+			
+			$userid=isset($_POST['userid'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['userid']):'';
+			$invoice_no=isset($_POST['invoice_no'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['invoice_no']):'';
+			$name=isset($_POST['name'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['name']):'';
+			$email=isset($_POST['email'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['email']):'';
+			$gender=isset($_POST['gender'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['gender']):'';
+			$age=isset($_POST['age'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['age']):'';
+			$phone=isset($_POST['phone'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['phone']):'';
+			$total_traveller=isset($_POST['total_traveller'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['total_traveller']):'';
+			$fare_per=isset($_POST['fare_per'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['fare_per']):'';
+			$total_fare=isset($_POST['total_fare'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['total_fare']):'';
+			$cab_type=isset($_POST['cab_type'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['cab_type']):'';
+			$start_from=isset($_POST['start_from'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['start_from']):'';
+			$end_to=isset($_POST['end_to'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['end_to']):'';
+			$booking_date=isset($_POST['booking_date'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['booking_date']):'';
+			$travel_date=isset($_POST['travel_date'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['travel_date']):'';
+			$booking_status=isset($_POST['booking_status'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['booking_status']):'';
+		
+
+
+			if(isset($booking_id)&&!empty($booking_id))
+			{
+				$sql1="update confirm_booking SET userid='".$userid."',name='".$name."',email='".$email."', phone ='".$phone."',gender='".$gender."',age='".$age."',";
+				$sql1.=" phone='".$phone."',total_traveller='".$total_traveller."',fare_per='".$fare_per."',";
+				$sql1.=" total_fare='".$total_fare."',cab_type='".$cab_type."',start_from='".$start_from."',";
+				$sql1.=" end_to='".$end_to."',booking_date='".$booking_date."',travel_date='".$travel_date."',";
+				$sql1.=" booking_status='".$booking_status."'";
+				$sql1.=" where id='".$booking_id."'";
+
+				//echo $sql1;die;
+				$update_users = mysqli_query(GFHConfig::$link,$sql1);
+				if($update_users)
+				{
+					$this->sendnotification();
+					$response=array('status'=>'update','msg'=>'update successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+
+			}else{
+				$sql1="insert into confirm_booking SET userid='".$userid."',name='".$name."',email='".$email."', phone ='".$phone."',gender='".$gender."',age='".$age."',";
+				$sql1.=" phone='".$phone."',total_traveller='".$total_traveller."',fare_per='".$fare_per."',";
+				$sql1.=" total_fare='".$total_fare."',cab_type='".$cab_type."',start_from='".$start_from."',";
+				$sql1.=" end_to='".$end_to."',booking_date='".$booking_date."',travel_date='".$travel_date."',";
+				$sql1.=" booking_status='".$booking_status."'";
+				$insert_users = mysqli_query(GFHConfig::$link,$sql1);
+				if($insert_users)
+				{
+					$response=array('status'=>'inserted','msg'=>'inserted successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+			}
+		}else{
+			$response=array('status'=>'empty','error'=>'Please enter required field.');
+		}
+
+		return $response;
+	}
+
+	public function sendnotification()
+	{
+
+		$acceptResponse=array();
+		$acceptResponse["vechileId"]=98;
+		$acceptResponse["vechileType"]="dbsnmsdfbm";
+		$acceptResponse["from"]="fshdkjhasf";
+		$acceptResponse["to"]="fdsjkjhskfd";
+		$acceptResponse["booking date"]="00000000";
+
+			$msgJsonData=$mesg=json_encode($acceptResponse);
+			$title=$title="successfully accepted ";
+			$userId=$userid=1;
+
+			$path_to_fcm="https://fcm.googleapis.com/fcm/send";
+
+			$server_key="AAAA6pWtd9Q:APA91bFnzjGV8w418oJzDXqEvIYWsUm139Up7_Ftx6VNxGaeO98jShpyG8Z7D802v4_zN58chZFlE3u_H3XjQ85N25C6dF90P3NTRmhgmigqJvpVPlLz-G5UksWDu7FMmoahWErVR1RF";
+
+			$sql="select deviceid from users where  id='".$userId."'";
+
+			$results=mysqli_query(GFHConfig::$link,$sql);
+			$row=mysqli_fetch_row($results);
+			$key=$row[0];
+
+			//$key="fbDNkbe6EXE:APA91bGwYBPY-kIID0AG4DMxaa5j-nhLyHxV3Fj8Ovq6u3n5_Ir9OmlksQgHjbFA0WKy1l6ZnUc--1o2DpGs5NvEt9aBiB6dhGGyE7zsWqRff7Vijor17qmH22g-g1SIww8rgj8JUc3e";
+
+			$headers=array('Authorization:key='.$server_key,'Content-type:application/json');
+
+			$fields=array('to'=>$key,'data'=>array('title'=>$title,'body'=>json_encode($msgJsonData)));
+
+			$payload=json_encode($fields);
+			$curl_session=curl_init();
+			curl_setopt($curl_session,CURLOPT_URL,$path_to_fcm);
+			curl_setopt($curl_session,CURLOPT_POST,true);
+			curl_setopt($curl_session,CURLOPT_HTTPHEADER,$headers);
+			curl_setopt($curl_session,CURLOPT_RETURNTRANSFER,true);
+			curl_setopt($curl_session,CURLOPT_SSL_VERIFYPEER,false);
+			curl_setopt($curl_session,CURLOPT_IPRESOLVE,CURL_IPRESOLVE_V4);
+			curl_setopt($curl_session,CURLOPT_POSTFIELDS,$payload);
+
+			$result=curl_exec($curl_session);
+
+			if($result)
+			{
+				return  true;
+			}else{
+				return  false;
+			}
+
+	}
+
+	public function delete_booking($ids="")
+	{
+		$response=array();
+
+	     if(isset($ids)&&!empty($ids))
+	     {
+	     	foreach($ids as $id){
+	     		$res=mysqli_query(GFHConfig::$link,"delete from tbl_bookinginfo where id=".$id);
+	     		if($res)
+	     		{
+	     			$response=true;
+	     		}
+	     	}
+	     }
+	    return $response;
+	}
+
+	public function delete_rental_booking($ids="")
+	{
+		$response=array();
+
+	     if(isset($ids)&&!empty($ids))
+	     {
+	     	foreach($ids as $id){
+	     		$res=mysqli_query(GFHConfig::$link,"delete from tbl_booking_rental_car where id=".$id);
+	     		if($res)
+	     		{
+	     			$response=true;
+	     		}
+	     	}
+	     }
+	    return $response;
+	}
+
+	public function single_booking_detail_delete($id="")
+	{
+		$response="";
+	     if(isset($id)&&!empty($id))
+	     {
+	     	mysqli_query(GFHConfig::$link,"delete from confirm_booking where id=".$id);
+	     	
+	     	$response=true;
+	     }
+	     return $response;
+	}
+
+	public function getfeedback($id="")
+	{
+		$user_id=isset($id)?$id:'';
+		$sql="select * from feedback";
+		if(!empty($user_id))
+		{
+			$sql.=" where id=".$user_id;
+		}
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function feedback()
+	{
+		$response=array();
+		
+			$feedback_id=isset($_POST['feedback_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['feedback_id']):'';
+			$userid=isset($_POST['userid'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['userid']):'';
+			
+			$customer_name=isset($_POST['customer_name'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['customer_name']):'';
+			$email_id=isset($_POST['email_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['email_id']):'';
+			$feedback_content=isset($_POST['feedback_content'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['feedback_content']):'';
+			$rating=isset($_POST['rating'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['rating']):'';
+		
+
+			if(isset($feedback_id)&&!empty($feedback_id))
+			{
+				 // echo "<pre>";print_r($_POST);die;
+				$sql1="update feedback SET userid='".$userid."',customer_name='".$customer_name."', email_id ='".$email_id."',feedback_content='".$feedback_content."',rating='".$rating."',status='1',entry_date=now() where id='".$feedback_id."'";
+				//echo $sql1;die;
+				$update_users = mysqli_query(GFHConfig::$link,$sql1);
+				if($update_users)
+				{
+					$response=array('status'=>'update','msg'=>'update successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+
+			}else{
+				$sql1="insert into feedback SET userid='".$userid."',customer_name='".$customer_name."', email_id ='".$email_id."',feedback_content='".$feedback_content."',rating='".$rating."',status='1',entry_date=now()";
+				$insert_users = mysqli_query(GFHConfig::$link,$sql1);
+				if($insert_users)
+				{
+					$response=array('status'=>'inserted','msg'=>'inserted successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+			}
+		
+
+		return $response;
+	}
+
+	public function deletefeedback()
+	{
+		$response=array();
+
+	     if(isset($ids)&&!empty($ids))
+	     {
+	     	foreach($ids as $id){
+	     		$res=mysqli_query(GFHConfig::$link,"delete from feedback where id=".$id);
+	     		if($res)
+	     		{
+	     			$response=true;
+	     		}
+	     	}
+	     }
+	    return $response;
+	}
+
+	public function getComplain($id="")
+	{
+		$user_id=isset($id)?$id:'';
+		$sql="select * from complain";
+		if(!empty($user_id))
+		{
+			$sql.=" where id=".$user_id;
+		}
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function complain()
+	{
+		$response=array();
+			 //echo "<pre>";print_r($_POST);die;
+			$complain_id=isset($_POST['complain_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['complain_id']):'';
+			$username=isset($_POST['username'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['username']):'';
+			
+			$phone=isset($_POST['phone'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['phone']):'';
+			$email_id=isset($_POST['email_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['email_id']):'';
+			$complain_content=isset($_POST['complain_content'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['complain_content']):'';
+			$complain_date=isset($_POST['complain_date'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['complain_date']):'';
+		
+
+			if(isset($complain_id)&&!empty($complain_id))
+			{
+				
+				$sql1="update  complain SET username='".$username."',phone='".$phone."', email_id ='".$email_id."',complain_content='".$complain_content."',complain_date='".$complain_date."',status='1',entry_date=now() where id='".$complain_id."'";
+				//echo $sql1;die;
+				$update_users = mysqli_query(GFHConfig::$link,$sql1);
+				if($update_users)
+				{
+					$response=array('status'=>'update','msg'=>'update successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+
+			}
+
+		return $response;
+	}
+
+	public function deletecomplain($ids)
+	{
+		$response=array();
+		//echo "<pre>";print_r($_POST);die;
+	     if(isset($ids)&&!empty($ids))
+	     {
+	     	foreach($ids as $id){
+	     		//echo "delete from complain where id=".$id;die;
+	     		$res=mysqli_query(GFHConfig::$link,"delete from complain where id=".$id);
+	     		if($res)
+	     		{
+	     			$response=true;
+	     		}
+	     	}
+	     }
+	    return $response;
+	}
+
+	public function setcity()
+	{
+		//echo "<pre>";print_r($_POST);die;
+		$city_id=isset($_POST['city_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['city_id']):'';
+			
+			$city=isset($_POST['city'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['city']):'';
+			$status=isset($_POST['status'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['status']):'';
+			//echo "<pre>";print_r($_POST);die;
+			$package=isset($_POST['package'])?implode(',',$_POST['package']):'';
+			if(isset($city_id)&&!empty($city_id))
+			{
+				$sql1="update city SET name='".$city."',status='".$status."',package='".$package."',updated_at=now() where id='".$city_id."'";
+				$update_city = mysqli_query(GFHConfig::$link,$sql1);
+				if($update_city)
+				{
+					$response=array('status'=>'update','msg'=>'update successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+
+			}else{
+				//echo "<pre>";print_r($_POST);die;
+				$sql1="insert into city SET name='".$city."',status='".$status."',package='".$package."',created_at=now()";
+				//echo $sql1;die;
+				$insert_city = mysqli_query(GFHConfig::$link,$sql1);
+				if($insert_city)
+				{
+					$response=array('status'=>'inserted','msg'=>'inserted successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+			}
+
+			return $response;
+	}
+
+	public function getCity($id="")
+	{
+		$user_id=isset($id)?$id:'';
+		$sql="select * from city";
+		if(!empty($user_id))
+		{
+			$sql.=" where id=".$user_id;
+		}
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function deletecity($ids)
+	{
+		$response=array();
+		//echo "<pre>";print_r($_POST);die;
+	     if(isset($ids)&&!empty($ids))
+	     {
+	     	foreach($ids as $id){
+	     		//echo "delete from complain where id=".$id;die;
+	     		$res=mysqli_query(GFHConfig::$link,"delete from city where id=".$id);
+	     		if($res)
+	     		{
+	     			$response=true;
+	     		}
+	     	}
+	     }
+	    return $response;
+	}
+
+	public function getCar($id="")
+	{
+		$id=isset($id)?$id:'';
+		$sql="SELECT * FROM `tbl_car_type`";
+		if(!empty($user_id))
+		{
+			$sql.=" where id='".$id."'";
+		}
+		return mysqli_query(GFHConfig::$link,$sql);
+	}
+
+	public function addCar()
+	{
+		//echo "<pre>";print_r($_POST);die;
+		$car_id=isset($_POST['car_id'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['car_id']):'';
+			
+			$name=isset($_POST['name'])?mysqli_real_escape_string(GFHConfig::$link,$_POST['name']):'';
+			
+			
+			if(isset($car_id)&&!empty($car_id))
+			{
+				$sql1="UPDATE `tbl_car_type` SET `name`='".$name."',`updated_at`=now() WHERE id='".$car_id."'";
+				$update_city = mysqli_query(GFHConfig::$link,$sql1);
+				if($update_city)
+				{
+					$response=array('status'=>'update','msg'=>'update successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+
+			}else{
+				//echo "<pre>";print_r($_POST);die;
+				$sql1="INSERT INTO `tbl_car_type` SET `name`='".$name."',`updated_at`=now(),created_at=now()";
+				//echo $sql1;die;
+				$insert_city = mysqli_query(GFHConfig::$link,$sql1);
+				if($insert_city)
+				{
+					$response=array('status'=>'inserted','msg'=>'inserted successfully');
+				}else{
+					$response=array('status'=>'failed','error'=>'mysql error');
+				}
+			}
+
+			return $response;
+	}
+
+
+	public function getSiteinfo()
+	{
+		$sql="SELECT * FROM `site_info`";
+		$result=mysqli_query(GFHConfig::$link,$sql);
+		return mysqli_fetch_assoc($result);
+	}
+
+
+
+}
+
+global $GFH_Admin;
+
+$GFH_Admin=new GFHAdmin();

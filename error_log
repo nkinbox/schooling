@@ -1,0 +1,479 @@
+[15-Dec-2017 12:30:38 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/ajax_check_form.php on line 14
+[15-Dec-2017 12:34:28 Asia/Kolkata] PHP Warning:  mysql_insert_id() expects parameter 1 to be resource, object given in /home/schoolling/public_html/demo/success.php on line 35
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 206
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2341
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 208
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2353
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 210
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2364
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 212
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2364
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 214
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 246
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 291
+[15-Dec-2017 12:40:31 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 296
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 206
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2341
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 208
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2353
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 210
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2364
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 212
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2364
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 214
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 246
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 291
+[15-Dec-2017 15:05:24 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 296
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 206
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2341
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 208
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2353
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 210
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2364
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 212
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2364
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 214
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 246
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 291
+[15-Dec-2017 15:40:49 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 296
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 206
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2342
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 208
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2354
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 210
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2365
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 212
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/demo/admin_panel/includes/function.php on line 2365
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/demo/dashboard.php on line 214
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 246
+[15-Dec-2017 10:29:20 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/demo/dashboard.php on line 291
+[16-Dec-2017 00:09:50 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Cross-site request forgery validation failed. Required param "state" missing from persistent data.' in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php:244
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php(221): Facebook\Helpers\FacebookRedirectLoginHelper->validateCsrf()
+#1 /home/schoolling/public_html/pop.php(10): Facebook\Helpers\FacebookRedirectLoginHelper->getAccessToken()
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 244
+[16-Dec-2017 00:09:55 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Cross-site request forgery validation failed. Required param "state" missing from persistent data.' in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php:244
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php(221): Facebook\Helpers\FacebookRedirectLoginHelper->validateCsrf()
+#1 /home/schoolling/public_html/pop.php(10): Facebook\Helpers\FacebookRedirectLoginHelper->getAccessToken()
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 244
+[16-Dec-2017 00:12:43 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Cross-site request forgery validation failed. Required param "state" missing from persistent data.' in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php:244
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php(221): Facebook\Helpers\FacebookRedirectLoginHelper->validateCsrf()
+#1 /home/schoolling/public_html/pop.php(10): Facebook\Helpers\FacebookRedirectLoginHelper->getAccessToken()
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 244
+[16-Dec-2017 00:13:22 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Cross-site request forgery validation failed. Required param "state" missing from persistent data.' in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php:244
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php(221): Facebook\Helpers\FacebookRedirectLoginHelper->validateCsrf()
+#1 /home/schoolling/public_html/pop.php(10): Facebook\Helpers\FacebookRedirectLoginHelper->getAccessToken()
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 244
+[16-Dec-2017 01:29:33 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/ajax_check_form.php on line 14
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 206
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2342
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 208
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2354
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 210
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2365
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 212
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2365
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 214
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 246
+[16-Dec-2017 01:52:58 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 291
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 206
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2383
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 208
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2395
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 210
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2406
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 212
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2406
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 214
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 246
+[16-Dec-2017 06:19:17 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 291
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 206
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2383
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 208
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2395
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 210
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2406
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 212
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2406
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 214
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 246
+[16-Dec-2017 06:19:23 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 291
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 206
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2383
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 208
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2395
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 210
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2406
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 212
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2406
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 214
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 246
+[16-Dec-2017 06:20:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 291
+[18-Dec-2017 04:13:28 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/edit-profile.php:28) in /home/schoolling/public_html/admin_panel/includes/function.php on line 1473
+[19-Dec-2017 06:53:26 America/Chicago] PHP Fatal error:  Class 'Facebook\Facebook' not found in /home/schoolling/public_html/fb-callback.php on line 3
+[19-Dec-2017 06:57:26 America/Chicago] PHP Fatal error:  Class 'Facebook\Facebook' not found in /home/schoolling/public_html/fb-callback.php on line 3
+[19-Dec-2017 06:58:02 America/Chicago] PHP Fatal error:  Class 'Facebook\Facebook' not found in /home/schoolling/public_html/fb-callback.php on line 3
+[19-Dec-2017 07:06:01 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Access token metadata contains unexpected app ID.' in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php:329
+Stack trace:
+#0 /home/schoolling/public_html/fb-callback.php(51): Facebook\Authentication\AccessTokenMetadata->validateAppId('{app-id}')
+#1 {main}
+  thrown in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php on line 329
+[19-Dec-2017 07:12:13 America/Chicago] PHP Fatal error:  Call to a member function getAccessToken() on null in /home/schoolling/public_html/fb-callback.php on line 12
+[20-Dec-2017 00:16:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 179
+[20-Dec-2017 00:16:33 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AACZBZUnBaGAw...', false)
+#1 /home/schoolling/public_html/pop.php(177): Google_Client->authenticate('4/AACZBZUnBaGAw...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 00:23:52 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 179
+[20-Dec-2017 00:24:32 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 179
+[20-Dec-2017 00:28:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 179
+[20-Dec-2017 00:31:08 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 179
+[20-Dec-2017 00:37:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 179
+[20-Dec-2017 01:29:48 America/Chicago] PHP Fatal error:  Call to a member function createAuthUrl() on null in /home/schoolling/public_html/pop.php on line 186
+[20-Dec-2017 01:31:08 America/Chicago] PHP Fatal error:  Call to a member function createAuthUrl() on null in /home/schoolling/public_html/pop.php on line 186
+[20-Dec-2017 01:31:11 America/Chicago] PHP Fatal error:  Call to a member function createAuthUrl() on null in /home/schoolling/public_html/pop.php on line 186
+[20-Dec-2017 01:32:04 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 194
+[20-Dec-2017 01:32:47 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AAACNFfNsC7ZJ...', false)
+#1 /home/schoolling/public_html/pop.php(192): Google_Client->authenticate('4/AAACNFfNsC7ZJ...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 01:34:11 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 194
+[20-Dec-2017 01:35:20 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 01:35:20 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 01:50:17 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AAB5KIWE1_aHZ...', false)
+#1 /home/schoolling/public_html/pop.php(192): Google_Client->authenticate('4/AAB5KIWE1_aHZ...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 01:50:50 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 194
+[20-Dec-2017 03:28:26 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 194
+[20-Dec-2017 03:31:39 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/oauth2/v2/userinfo: (401) Invalid Credentials' in /home/schoolling/public_html/Google/Http/REST.php:110
+Stack trace:
+#0 /home/schoolling/public_html/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/schoolling/public_html/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/schoolling/public_html/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/schoolling/public_html/Google/Client.php(593): Google_Http_REST::execute(Object(Google_Client), Object(Google_Http_Request))
+#5 /home/schoolling/public_html/Google/Service/Resource.php(237): Google_Client->execute(Object(Google_Http_Request))
+#6 /home/schoolling/public_html/Google/Service/Oauth2.php(175): Google_Service_Resource->call('get', Array, 'Google_Ser in /home/schoolling/public_html/Google/Http/REST.php on line 110
+[20-Dec-2017 03:33:39 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/oauth2/v2/userinfo: (401) Invalid Credentials' in /home/schoolling/public_html/Google/Http/REST.php:110
+Stack trace:
+#0 /home/schoolling/public_html/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/schoolling/public_html/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/schoolling/public_html/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/schoolling/public_html/Google/Client.php(593): Google_Http_REST::execute(Object(Google_Client), Object(Google_Http_Request))
+#5 /home/schoolling/public_html/Google/Service/Resource.php(237): Google_Client->execute(Object(Google_Http_Request))
+#6 /home/schoolling/public_html/Google/Service/Oauth2.php(175): Google_Service_Resource->call('get', Array, 'Google_Ser in /home/schoolling/public_html/Google/Http/REST.php on line 110
+[20-Dec-2017 03:37:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/oauth2/v2/userinfo: (401) Invalid Credentials' in /home/schoolling/public_html/Google/Http/REST.php:110
+Stack trace:
+#0 /home/schoolling/public_html/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/schoolling/public_html/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/schoolling/public_html/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/schoolling/public_html/Google/Client.php(593): Google_Http_REST::execute(Object(Google_Client), Object(Google_Http_Request))
+#5 /home/schoolling/public_html/Google/Service/Resource.php(237): Google_Client->execute(Object(Google_Http_Request))
+#6 /home/schoolling/public_html/Google/Service/Oauth2.php(175): Google_Service_Resource->call('get', Array, 'Google_Ser in /home/schoolling/public_html/Google/Http/REST.php on line 110
+[20-Dec-2017 03:41:25 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 194
+[20-Dec-2017 03:49:40 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/admin_panel/includes/function.php on line 2619
+[20-Dec-2017 03:49:55 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/admin_panel/includes/function.php on line 2619
+[20-Dec-2017 03:53:25 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/admin_panel/includes/function.php on line 2619
+[20-Dec-2017 03:55:52 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 194
+[20-Dec-2017 03:56:04 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/admin_panel/includes/function.php on line 2619
+[20-Dec-2017 03:56:11 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/admin_panel/includes/function.php on line 2619
+[20-Dec-2017 03:56:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/admin_panel/includes/function.php on line 2619
+[20-Dec-2017 03:57:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/admin_panel/includes/function.php on line 2619
+[20-Dec-2017 03:57:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/admin_panel/includes/function.php on line 2619
+[20-Dec-2017 03:57:37 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/admin_panel/includes/function.php on line 2619
+[20-Dec-2017 04:03:51 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 195
+[20-Dec-2017 04:25:00 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookAuthenticationException' with message '(#100) For field 'debug_token': The parameter input_token is required' in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php:106
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/FacebookResponse.php(210): Facebook\Exceptions\FacebookResponseException::create(Object(Facebook\FacebookResponse))
+#1 /home/schoolling/public_html/Facebook/FacebookResponse.php(255): Facebook\FacebookResponse->makeException()
+#2 /home/schoolling/public_html/Facebook/FacebookResponse.php(82): Facebook\FacebookResponse->decodeBody()
+#3 /home/schoolling/public_html/Facebook/FacebookClient.php(225): Facebook\FacebookResponse->__construct(Object(Facebook\FacebookRequest), '{"error":{"mess...', 400, Array)
+#4 /home/schoolling/public_html/Facebook/Authentication/OAuth2Client.php(118): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#5 /home/schoolling/public_html/fb-callback.php(30): Facebook\Authent in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php on line 106
+[20-Dec-2017 04:27:45 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Cross-site request forgery validation failed. Required param "state" missing from persistent data.' in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php:244
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php(221): Facebook\Helpers\FacebookRedirectLoginHelper->validateCsrf()
+#1 /home/schoolling/public_html/fb-callback.php(11): Facebook\Helpers\FacebookRedirectLoginHelper->getAccessToken()
+#2 {main}
+  thrown in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 244
+[20-Dec-2017 04:33:39 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Cross-site request forgery validation failed. Required param "state" missing from persistent data.' in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php:244
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php(221): Facebook\Helpers\FacebookRedirectLoginHelper->validateCsrf()
+#1 /home/schoolling/public_html/fb-callback.php(20): Facebook\Helpers\FacebookRedirectLoginHelper->getAccessToken()
+#2 {main}
+  thrown in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 244
+[20-Dec-2017 04:34:35 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Cross-site request forgery validation failed. Required param "state" missing from persistent data.' in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php:244
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php(221): Facebook\Helpers\FacebookRedirectLoginHelper->validateCsrf()
+#1 /home/schoolling/public_html/fb-callback.php(20): Facebook\Helpers\FacebookRedirectLoginHelper->getAccessToken()
+#2 {main}
+  thrown in /home/schoolling/public_html/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 244
+[20-Dec-2017 04:50:39 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Access token metadata contains unexpected app ID.' in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php:329
+Stack trace:
+#0 /home/schoolling/public_html/fb-callback.php(55): Facebook\Authentication\AccessTokenMetadata->validateAppId('{app-id}')
+#1 {main}
+  thrown in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php on line 329
+[20-Dec-2017 04:53:57 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Access token metadata contains unexpected app ID.' in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php:329
+Stack trace:
+#0 /home/schoolling/public_html/fb-callback.php(55): Facebook\Authentication\AccessTokenMetadata->validateAppId('{app-id}')
+#1 {main}
+  thrown in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php on line 329
+[20-Dec-2017 04:55:28 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Access token metadata contains unexpected app ID.' in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php:329
+Stack trace:
+#0 /home/schoolling/public_html/fb-callback.php(55): Facebook\Authentication\AccessTokenMetadata->validateAppId('{app-id}')
+#1 {main}
+  thrown in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php on line 329
+[20-Dec-2017 04:56:33 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookAuthenticationException' with message '(#100) For field 'debug_token': The parameter input_token is required' in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php:106
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/FacebookResponse.php(210): Facebook\Exceptions\FacebookResponseException::create(Object(Facebook\FacebookResponse))
+#1 /home/schoolling/public_html/Facebook/FacebookResponse.php(255): Facebook\FacebookResponse->makeException()
+#2 /home/schoolling/public_html/Facebook/FacebookResponse.php(82): Facebook\FacebookResponse->decodeBody()
+#3 /home/schoolling/public_html/Facebook/FacebookClient.php(225): Facebook\FacebookResponse->__construct(Object(Facebook\FacebookRequest), '{"error":{"mess...', 400, Array)
+#4 /home/schoolling/public_html/Facebook/Authentication/OAuth2Client.php(118): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#5 /home/schoolling/public_html/fb-callback.php(48): Facebook\Authent in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php on line 106
+[20-Dec-2017 04:57:33 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookSDKException' with message 'Access token metadata contains unexpected app ID.' in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php:329
+Stack trace:
+#0 /home/schoolling/public_html/fb-callback.php(53): Facebook\Authentication\AccessTokenMetadata->validateAppId('{app-id}')
+#1 {main}
+  thrown in /home/schoolling/public_html/Facebook/Authentication/AccessTokenMetadata.php on line 329
+[20-Dec-2017 04:58:12 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookAuthenticationException' with message '(#100) For field 'debug_token': The parameter input_token is required' in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php:106
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/FacebookResponse.php(210): Facebook\Exceptions\FacebookResponseException::create(Object(Facebook\FacebookResponse))
+#1 /home/schoolling/public_html/Facebook/FacebookResponse.php(255): Facebook\FacebookResponse->makeException()
+#2 /home/schoolling/public_html/Facebook/FacebookResponse.php(82): Facebook\FacebookResponse->decodeBody()
+#3 /home/schoolling/public_html/Facebook/FacebookClient.php(225): Facebook\FacebookResponse->__construct(Object(Facebook\FacebookRequest), '{"error":{"mess...', 400, Array)
+#4 /home/schoolling/public_html/Facebook/Authentication/OAuth2Client.php(118): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#5 /home/schoolling/public_html/fb-callback.php(48): Facebook\Authent in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php on line 106
+[20-Dec-2017 05:03:34 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 191
+[20-Dec-2017 05:03:50 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AAD5eMy6807-C...', false)
+#1 /home/schoolling/public_html/pop.php(189): Google_Client->authenticate('4/AAD5eMy6807-C...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 05:03:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:03:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:21:51 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/header.php on line 2
+[20-Dec-2017 05:23:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:23:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:23:25 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:23:25 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:24:11 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 192
+[20-Dec-2017 05:24:16 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AAC2PE0MuVfi_...', false)
+#1 /home/schoolling/public_html/pop.php(190): Google_Client->authenticate('4/AAC2PE0MuVfi_...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 05:25:50 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:25:50 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:27:19 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AADN2IWK8n0nc...', false)
+#1 /home/schoolling/public_html/pop.php(190): Google_Client->authenticate('4/AADN2IWK8n0nc...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 05:28:47 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 192
+[20-Dec-2017 05:36:32 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 192
+[20-Dec-2017 05:36:39 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:36:39 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2666
+[20-Dec-2017 05:39:32 America/Chicago] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home/schoolling/public_html/admin_panel/includes/function.php on line 2671
+[20-Dec-2017 05:40:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 192
+[20-Dec-2017 05:40:33 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AACVqJEJIzV6G...', false)
+#1 /home/schoolling/public_html/pop.php(190): Google_Client->authenticate('4/AACVqJEJIzV6G...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 05:41:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 192
+[20-Dec-2017 05:45:34 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 192
+[20-Dec-2017 05:51:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 192
+[20-Dec-2017 05:54:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 192
+[20-Dec-2017 05:56:30 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 192
+[20-Dec-2017 05:57:06 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 05:57:06 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 05:58:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/apply-to-schools.php:34) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 05:58:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/apply-to-schools.php:34) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 05:58:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/apply-to-schools.php:34) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 05:58:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/apply-to-schools.php:34) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 05:58:51 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/apply-to-schools.php:34) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 05:58:51 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/apply-to-schools.php:34) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 05:58:51 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/apply-to-schools.php:34) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 05:58:51 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/apply-to-schools.php:34) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 06:00:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 06:00:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 06:00:04 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 06:00:05 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 06:00:10 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 06:00:11 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/admin_panel/includes/function.php on line 2665
+[20-Dec-2017 06:15:01 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 186
+[20-Dec-2017 06:16:48 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 186
+[20-Dec-2017 06:22:45 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 186
+[20-Dec-2017 06:23:02 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AADgEE5yTzsvn...', false)
+#1 /home/schoolling/public_html/pop.php(184): Google_Client->authenticate('4/AADgEE5yTzsvn...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 06:23:56 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 186
+[20-Dec-2017 06:24:02 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AAAF9mNurFELK...', false)
+#1 /home/schoolling/public_html/pop.php(184): Google_Client->authenticate('4/AAAF9mNurFELK...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 06:24:05 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AAAF9mNurFELK...', false)
+#1 /home/schoolling/public_html/pop.php(184): Google_Client->authenticate('4/AAAF9mNurFELK...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 06:24:10 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/AAAF9mNurFELK...', false)
+#1 /home/schoolling/public_html/pop.php(184): Google_Client->authenticate('4/AAAF9mNurFELK...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 105
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2404
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 107
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2416
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 109
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2427
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 111
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2427
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 113
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 145
+[20-Dec-2017 06:24:44 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 190
+[20-Dec-2017 06:26:47 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 183
+[20-Dec-2017 06:29:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 184
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 105
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2404
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 107
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2416
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 109
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2427
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 111
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2427
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 113
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 145
+[22-Dec-2017 00:52:14 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 190
+[24-Dec-2017 11:22:24 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookAuthenticationException' with message '(#100) For field 'debug_token': The parameter input_token is required' in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php:106
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/FacebookResponse.php(210): Facebook\Exceptions\FacebookResponseException::create(Object(Facebook\FacebookResponse))
+#1 /home/schoolling/public_html/Facebook/FacebookResponse.php(255): Facebook\FacebookResponse->makeException()
+#2 /home/schoolling/public_html/Facebook/FacebookResponse.php(82): Facebook\FacebookResponse->decodeBody()
+#3 /home/schoolling/public_html/Facebook/FacebookClient.php(225): Facebook\FacebookResponse->__construct(Object(Facebook\FacebookRequest), '{"error":{"mess...', 400, Array)
+#4 /home/schoolling/public_html/Facebook/Authentication/OAuth2Client.php(118): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#5 /home/schoolling/public_html/fb-callback.php(48): Facebook\Authent in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php on line 106
+[26-Dec-2017 02:15:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 184
+[26-Dec-2017 02:15:31 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/7rmQ0weibVD2Y...', false)
+#1 /home/schoolling/public_html/pop.php(182): Google_Client->authenticate('4/7rmQ0weibVD2Y...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[26-Dec-2017 02:46:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 184
+[26-Dec-2017 02:47:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 184
+[26-Dec-2017 02:47:23 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/aLsLA12BY3DBg...', false)
+#1 /home/schoolling/public_html/pop.php(182): Google_Client->authenticate('4/aLsLA12BY3DBg...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[26-Dec-2017 02:47:41 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/aLsLA12BY3DBg...', false)
+#1 /home/schoolling/public_html/pop.php(182): Google_Client->authenticate('4/aLsLA12BY3DBg...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[26-Dec-2017 02:53:54 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookAuthenticationException' with message '(#100) For field 'debug_token': The parameter input_token is required' in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php:106
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/FacebookResponse.php(210): Facebook\Exceptions\FacebookResponseException::create(Object(Facebook\FacebookResponse))
+#1 /home/schoolling/public_html/Facebook/FacebookResponse.php(255): Facebook\FacebookResponse->makeException()
+#2 /home/schoolling/public_html/Facebook/FacebookResponse.php(82): Facebook\FacebookResponse->decodeBody()
+#3 /home/schoolling/public_html/Facebook/FacebookClient.php(225): Facebook\FacebookResponse->__construct(Object(Facebook\FacebookRequest), '{"error":{"mess...', 400, Array)
+#4 /home/schoolling/public_html/Facebook/Authentication/OAuth2Client.php(118): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#5 /home/schoolling/public_html/fb-callback.php(48): Facebook\Authent in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php on line 106
+[26-Dec-2017 03:48:39 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/schoolling/public_html/index.php:8) in /home/schoolling/public_html/pop.php on line 184
+[26-Dec-2017 03:59:59 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Error fetching OAuth2 access token, message: 'invalid_grant: Code was already redeemed.'' in /home/schoolling/public_html/Google/Auth/OAuth2.php:125
+Stack trace:
+#0 /home/schoolling/public_html/Google/Client.php(128): Google_Auth_OAuth2->authenticate('4/OQWHu1RbWy2ts...', false)
+#1 /home/schoolling/public_html/pop.php(182): Google_Client->authenticate('4/OQWHu1RbWy2ts...')
+#2 /home/schoolling/public_html/footer.php(456): include('/home/schoollin...')
+#3 /home/schoolling/public_html/index.php(512): include('/home/schoollin...')
+#4 {main}
+  thrown in /home/schoolling/public_html/Google/Auth/OAuth2.php on line 125
+[26-Dec-2017 04:30:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/schoolling/public_html/success.php on line 38
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 105
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2404
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 107
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2416
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 109
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2427
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 111
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_query(): Empty query in /home/schoolling/public_html/admin_panel/includes/function.php on line 2427
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/schoolling/public_html/dashboard.php on line 113
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 145
+[26-Dec-2017 04:30:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/schoolling/public_html/dashboard.php on line 190
+[27-Dec-2017 00:12:18 America/Chicago] PHP Fatal error:  Uncaught exception 'Facebook\Exceptions\FacebookAuthenticationException' with message '(#100) For field 'debug_token': The parameter input_token is required' in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php:106
+Stack trace:
+#0 /home/schoolling/public_html/Facebook/FacebookResponse.php(210): Facebook\Exceptions\FacebookResponseException::create(Object(Facebook\FacebookResponse))
+#1 /home/schoolling/public_html/Facebook/FacebookResponse.php(255): Facebook\FacebookResponse->makeException()
+#2 /home/schoolling/public_html/Facebook/FacebookResponse.php(82): Facebook\FacebookResponse->decodeBody()
+#3 /home/schoolling/public_html/Facebook/FacebookClient.php(225): Facebook\FacebookResponse->__construct(Object(Facebook\FacebookRequest), '{"error":{"mess...', 400, Array)
+#4 /home/schoolling/public_html/Facebook/Authentication/OAuth2Client.php(118): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#5 /home/schoolling/public_html/fb-callback.php(48): Facebook\Authent in /home/schoolling/public_html/Facebook/Exceptions/FacebookResponseException.php on line 106
+[13-Jan-2018 03:16:19 America/Chicago] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/schoolling/public_html/admin_panel/includes/function.php on line 134

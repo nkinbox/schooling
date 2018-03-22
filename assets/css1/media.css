@@ -1,0 +1,35 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.cs-media img{margin-left: 0px !important;padding-top: 66px !important;width: 100% !important;}
+	.indexh2{margin-left: 0px !important;font-size: 20px !important;text-align: center;}
+	.index-img{margin-left: 0px !important;margin-top: 80px !important;}
+	.main-h3{font-size: 18px;margin-left: 0px;}
+	.test1{width: 100%;padding: 0px !important;}
+	.work-box img{left: 125px !important;}
+	#slider{width: 310px !important;}
+	.shape1{padding-top: 0px;}
+	.helpimg{margin: 0 auto !important;margin-left: 0px;}
+	.blue-footer{height: auto;}
+	#count{display: none;}
+	.team-img{left: 100px !important;}
+	.team-name{left: 55px;}
+	.desg{left: 100px;}
+	.app-text{margin-left: 0px;padding-left: 15px;}
+	.apph5{left: 15px;}
+	.input-group{/*margin-left: -74px;width: 100%;*/ display: none !important;}
+	.app-button{margin-left: 70px;margin-top: 20px;}
+	.app-button1{margin-left: 52px;}
+	.btn-index{position: absolute;left: 100px;top: -60px;}
+    .index-control{width: 100% !important;position: absolute !important;left: 13px !important;}
+    .search{position: absolute;top: 60px;left: -80px;}
+    #header .main-header{height: auto !important;}
+    .cs-media-new img{margin-left: -6px !important;
+    margin-top: -40px !important;}
+    ._checkbox label{width: 260px;padding-top: 5px !important;text-align: center;}
+    .cs-sorting-list{margin-top: 150px;}
+    .js-show-help{float: left;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 125px;}
+    .cs-left-side{width: 100% !important;}
+}

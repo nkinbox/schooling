@@ -1,0 +1,11 @@
+<?php
+if(isset($_POST['delete'])&&!empty($_POST['delete']))
+{
+	session_start();
+	$prodid1=$_POST['prodid1'];
+	if(!empty($prodid1))
+	{
+		unset($_SESSION['CART'][$prodid1]);
+	}
+	die;
+}

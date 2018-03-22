@@ -1,0 +1,22 @@
+.text_margin{
+	margin-bottom: 12px;
+width: 100%;
+}
+.add_more {
+  float: right;
+  margin-bottom: 5px;
+}
+.add_more_text{
+padding-right: 0 !important;
+}
+
+.add_more_btn_left{
+	padding-left: 0;
+	
+}
+.send-mail-hide{
+	display:none;
+}
+.send-mail-show{
+	display:block;
+}

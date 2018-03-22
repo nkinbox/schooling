@@ -1,0 +1,104 @@
+<?php require_once('admin_panel/includes/function.php');
+// if(isset($_POST))
+// {
+	$region=isset($_POST['alregion'])?implode( "', '",$_POST['alregion']):'';
+	$gender=isset($_POST['schoolgender'])?implode( "', '",$_POST['schoolgender']):'';
+	
+	$sql=array();
+
+	if(isset($region)&&!empty($region))
+	{
+		$reg="`school_region` IN ('".$region."')";
+		array_push($sql,$reg);
+	}
+	
+	if(isset($gender)&&!empty($gender))
+	{
+		$gen="`school_gender` IN ('".$gender."')";
+		array_push($sql,$gen);
+	}
+
+
+	$where=implode(" and ",$sql);
+	
+	if(!empty($_POST['school']))
+	{
+		$order=" order by name asc";
+		
+	}else{
+		$order="";
+	}
+
+	if(isset($_POST['alldd'])&&!empty($_POST['alldd']))
+	{
+		$query="SELECT `id`, `school_id`, `name`, `school_gender`, `school_region`, `service_fee`, `schoolimg`, `alert_fee`, `address`, `status` FROM `tbl_school`";
+
+	}else{
+		$query="SELECT `id`, `school_id`, `name`, `school_gender`, `school_region`, `service_fee`, `schoolimg`, `alert_fee`, `address`, `status` FROM `tbl_school` WHERE ".$where.$order;
+	}
+
+	// echo $query;die;
+	
+	$allschools=mysqli_query(GFHConfig::$link,$query);
+	
+	$allschools=$GFH_Admin->search_School($query);
+	if(@mysqli_num_rows($allschools)>0){
+	while($school=mysqli_fetch_assoc($allschools)){
+?>
+
+ <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+    <div class="cs-courses courses-grid">
+      <div class="grid_btn">
+        <div class="col-md-6">
+          <a href="#"   data-target="#cs-login" data-toggle="modal">
+            <img src="assets/images/share.png" class="share"></a>
+            <h6 style="margin-left: -23px;margin-top: 3px;">Share</h6>
+          </div>
+          <div class="col-md-6 map">
+            <a href="#"   class="js-show-help" data-id="<?php echo isset($school['id'])?$school['id']:'';  ?>" >
+              <!-- <i class="fa fa-map-marker" aria-hidden="true"></i> -->
+              <img src="assets/images/location.png" class="location-img " >
+              <h6 class="distanceh6">Distance</h6>
+            </a>
+            <div class="located-content js-help-content<?php echo isset($school['id'])?$school['id']:'';  ?>" style="display:none;">
+              <p id="">8Km From Laxmi Nagar, Delhi</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="">
+          <figure><a href="#">
+             <?php if(isset($school['schoolimg'])&&!empty($school['schoolimg'])){  ?>
+           <img src="images\school\<?php echo isset($school['schoolimg'])?$school['schoolimg']:'';  ?>"  alt="">
+            <?php  }else{ ?>
+            <img src="assets\images\images.jpg" alt="" class="home">
+            <?php  } ?>
+          </a></figure>
+        </div>
+        <div class="cs-text">       
+
+	    <span class="cs-caption">Address</span>
+	    <div class="cs-post-title">
+	      <h5><a href="#"><?php echo isset($school['name'])?$school['name']:'';  ?><br>
+	        </a></h5>
+	      <h5><?php echo isset($school['address'])?$school['address']:'';  ?></h5>
+	      <h5><?php echo isset($school['school_gender'])?$school['school_gender']:'';  ?></h5>
+	    </div>
+	    <span class="cs-courses-price"><em> Services Fee : <i class="fa fa-inr" aria-hidden="true"></i> </em><?php echo isset($school['service_fee'])?$school['service_fee']:'';  ?></span>
+	    <div class="cs-post-meta">
+	      <span class="text-center"><button onclick='add_to_cart("<?php echo isset($school['id'])?$school['id']:'';  ?>","1","<?php echo isset($school['service_fee'])?$school['service_fee']:'';  ?>");'><i class="fa fa-shopping-cart" aria-hidden="true" ></i>Add To Cart</button>
+	      </span>
+	    </div>
+	  </div>
+	  </div>
+	  </div>
+<?php
+}
+}else{ ?>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	<h4>No Schools Found!</h4>
+</div>
+<?php }
+die();
+// }
+?>
